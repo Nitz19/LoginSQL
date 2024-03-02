@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* Reset and base styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #e4e9f7;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+
+/* Form styles */
+.box {
+    background: #fdfdfd;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.box header {
+    font-size: 25px;
+    font-weight: 600;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.form-box {
+    width: 100%;
+    max-width: 450px;
+}
+
+.form-box .field {
+    margin-bottom: 15px;
+}
+
+.form-box .input input {
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+.form-box .input input:focus {
+    border-color: #555;
+}
+
+.btn {
+    height: 40px;
+    background: rgba(76, 68, 182, 0.808);
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgba(76, 68, 182, 1);
+}
+
+.submit {
+    width: 100%;
+}
+
+.links {
+    margin-bottom: 20px;
+}
+
+/* Navigation styles */
+.nav {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo a {
+    font-size: 25px;
+    font-weight: 900;
+    text-decoration: none;
+    color: #000;
+}
+
+.right-links a {
+    padding: 0 15px;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.right-links a:hover {
+    color: #555;
+}
+
+/* Main content styles */
+main {
+    margin-top: 20px;
+}
+
+.main-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.top .box {
+    width: calc(33.33% - 20px);
+}
+
+.bottom {
+    width: 100%;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 840px) {
+    .main-box .top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top .box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
